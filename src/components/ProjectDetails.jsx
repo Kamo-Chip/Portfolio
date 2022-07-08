@@ -34,7 +34,7 @@ const ProjectDetails = () => {
         <li>Making the application's features intuitive</li>
         <li>Displaying help screens to aid the user</li>`);
         setLink(`https://projektgreekgods.vercel.app/`);
-        setTools(["React", "Node" , "Firebase", "JavaScript", "HTML", "CSS", "React Icons", "Context API"]);
+        setTools(["React", "Node" , "Firebase", "JavaScript", "HTML", "CSS", "React Icons", "Context API", "GitHub", "Vercel"]);
         break;
       case "diamondsInTheRough":
         setImgSrc(Wsb);
@@ -49,7 +49,7 @@ const ProjectDetails = () => {
         <li>Finding an effective charting library</li>
         <li>Figuring out how to display data on the chart</li>
         <li>Connecting to and getting data from the Alpha Vantage API</li>`);
-        setTools(["Alpha Vantage API", "TradingView LightWeight Charts", "React", "JavaScript", "Node", "Express", "Puppeteer", "Firebase"]);
+        setTools(["Alpha Vantage API", "TradingView LightWeight Charts", "React", "JavaScript", "Node", "Express", "Puppeteer", "Firebase", "GitHub", "Vercel"]);
         break;
       case "cvCreator":
         setImgSrc(MacCv);
@@ -60,7 +60,7 @@ const ProjectDetails = () => {
         <li>How to add and delete data from props</li>
         <li>Converting class components to functional components</li>`);
         setLink("https://kamo-chip.github.io/CV-Creator/");
-        setTools(["Devicon API", "React", "JavaScript", "HTML", "CSS", "Node"]);
+        setTools(["Devicon API", "React", "JavaScript", "HTML", "CSS", "Node", "GitHub"]);
         break;
       case "weatherApp":
         setImgSrc(MacWeather);
@@ -72,7 +72,7 @@ const ProjectDetails = () => {
         <li>Using asynchronous JavaScript</li>
         <li>Communicating with OpenWeather API</li>`);
         setLink("https://kamo-chip.github.io/Weather-App/");
-        setTools(["OpenWeather API", "JavaScript", "HTML", "CSS", "Node"]);
+        setTools(["OpenWeather API", "JavaScript", "HTML", "CSS", "Node", "GitHub"]);
         break;
       default:
     }
