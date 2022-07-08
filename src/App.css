@@ -1,38 +1,389 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  margin: 0;
+  overflow-y: scroll;
+  background-color: #f5f5f5f5;
+  font-family: "Bebas Neue";
+  overflow-x: hidden;
+}
+
+#root {
+  overflow-x: hidden;
+  max-width: 100vw;
+}
+
+h1 {
+  font-size: 4rem;
+  text-decoration: underline;
+  text-decoration-color: #000;
+}
+
+h2 {
+  font-family: "Bebas Neue" !important;
+  text-decoration: underline;
+  border-radius: 5px;
+}
+
+button {
+  border: solid 3px;
+  box-shadow: 5px 5px;
+  font-size: 2rem;
+  padding: 2px;
+  background-color: #51fc26;
+  transition: all ease-in 100ms;
+  width: fit-content;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #bc57ff;
+  transform: rotate(5deg) scale(1.1);
+}
+/* Navigation */
+
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fcd926;
+  width: 100vw;
+  border-bottom: solid #000 3px;
+  font-size: 2rem;
+}
+
+.navigation ul{
+  display: flex;
+  flex-direction: row;
+  padding: 5px 0;
+  margin: 0;
+}
+
+.navigation li {
+  list-style: none;
+}
+.navigation ul li a{
+  padding: 0 1rem;
+  text-decoration: underline;
+  text-decoration-color: #000;
+  cursor: pointer;
+}
+
+/* .navigation ul li:hover{
+  text-decoration-color: #fcd926;
+} */
+/* Hero */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 10%;
+}
+
+/* @keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+} */
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 8rem;
+  margin-bottom: 3rem;
+}
+
+.text1, .text2, .text3{
+  animation: moveUp linear 500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.text2{
+  animation: moveUp linear 1000ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.text3{
+  animation: moveUp linear 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes moveUp {
+  from{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to{
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 
-.App-header {
-  background-color: #282c34;
+/* About */
+.about {
   min-height: 100vh;
+}
+
+.about-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.description{
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  margin-bottom: 50px;
+}
+
+.description p{
+  width: 70%;
+  font-family: Arial
+}
+.about-text h1{
+  font-size: 5rem;
+  margin: 0;
+}
+
+.skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  padding-right: 5em;
+}
+
+.skills-container div {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  margin: 1em 1em;
+  padding: .3em .5em;
+  border: solid #000 3px;
+  box-shadow: #fc2626 5px 5px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+/* Projects */
+ 
+.projects, .contact {
+  margin: 0 5%;
+}
+
+.projects h1 {
+  margin: 0;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.project-layout {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 1em;
+}
+.project{
+  background-color: #fff;
+  height: fit-content;
+  max-width: 600px;
+  min-width: 300px;
+  border-radius: 5px;
+  border: solid #000 3px;
+  box-shadow: 10px 10px;
+  margin: 20px;
+  transition: transform ease-in-out 200ms;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project p{
+  font-family: Arial;
+}
+.project h2 {
+  margin: 0;
+  padding: .5em 1em;
+  background-color: #fcd926;
+  border-bottom: solid #000 3px;
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tools div {
+  background-color: rgb(255, 157, 0);
+  margin: .2em .2em;
+  padding: .3em .5em;
+  border: solid #000 3px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+/* Footer */
+footer {
+  background-color: #fcd926;
+  border-top: solid #000 3px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: .5em 1em;
+  margin-top: 5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.socials div span {
+  text-decoration: underline;
+  text-decoration-color: #fcd926;
+  transition: text-decoration-color ease-in 200ms;
+}
+
+.socials div span:hover{
+  text-decoration-color: #000;
+}
+
+/* Contact */
+
+.contact h1 {
+  margin-bottom: 0;
+}
+
+.contact a {
+  font-size: 2rem;
+  font-family: Arial;
+  text-decoration: underline;
+  text-decoration-color: #f5f5f5f5;
+  transition: text-decoration-color ease-in 200ms;
+}
+
+.contact a:hover{
+  text-decoration-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+  .description p {
+    width: 100%;
+    padding-right: 50px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .project-details-container img {
+    width: 322px !important;
+  }
+}
+@media screen and (max-width: 425px){
+  .hero-section{
+    padding: 0 1em;
+  }
+  .text1, .text3 {
+    font-size: 1.5rem !important;
+  }
+  .text2 {
+    font-size: 5rem;
+  }
+
+  .hero-section a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+
+  .description p {
+    padding: 0
+  }
+  .skills-container {
+    padding: 0;
+  }
+
+  .skills-container div {
+    margin: 8px;
+  }
+
+  .project-layout img {
+    width: 300px;
+  }
+
+  .socials {
+    align-items: flex-end;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-right: 0;
+  }
+
+  .contact a {
+    font-size: 1.5rem;
+  }
+
+  .project-details {
+    padding: 0 10px !important;
+  }
+  .project-details-container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .project-details-container img {
+    align-self: center;
+  }
+  .project-details h1 {
+    margin: 20px 0 0 0;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 320px){
+  .project-layout img {
+    width: 250px;
+  }
+
+  .project {
+    width: 300px;
+  }
+
+  .contact a {
+    font-size: 1.2rem;
   }
 }
