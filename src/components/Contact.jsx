@@ -7,7 +7,16 @@ const Contact = () => {
     <>
       <section className='contact' id="contact">
         <h1>Contact Me</h1>
-        <a href="mailto:kamokhumalo04@gmail.com" target="_blank">KamoKhumalo04@gmail.com<BiLinkExternal/></a>
+        <div style={{
+          display: "flex",
+          flexDirection: "row",
+          alignItems: "center"
+        }}>
+          <p style={{
+            paddingRight: ".5em"
+          }}>Email:</p>
+          <a href="mailto:hellokamo04@gmail.com" target="_blank">hellokamo04@gmail.com<BiLinkExternal/></a>
+        </div>
       </section>
       <Footer/>
     </>

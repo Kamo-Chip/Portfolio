@@ -276,14 +276,17 @@ a {
 }
 
 .contact a {
-  font-size: 2rem;
   font-family: Arial;
   text-decoration: underline;
   text-decoration-color: #f5f5f5f5;
   transition: text-decoration-color ease-in 200ms;
   color: #0072c6;
+  padding-bottom: 5px;
 }
 
+.contact div {
+  font-size: 2rem;
+}
 .details-layout a {
   font-family: Arial;
   text-decoration: underline;
@@ -335,7 +338,7 @@ a {
   }
 
   .project-layout img {
-    max-height: 400px !important;
+    max-width: 500px !important;
   }
 
   .project {
@@ -356,6 +359,10 @@ a {
 
   .details-layout{
     font-size: 2rem;
+  }
+
+  .contact div {
+    font-size: 4rem;
   }
 }
 
@@ -415,7 +422,7 @@ a {
     padding-right: 0;
   }
 
-  .contact a {
+  .contact div{
     font-size: 1.5rem;
   }
 
@@ -447,7 +454,7 @@ a {
     width: 300px;
   }
 
-  .contact a {
+  .contact div {
     font-size: 1.2rem;
   }
 }
