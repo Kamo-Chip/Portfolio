@@ -43,6 +43,7 @@ button {
   width: fit-content;
   cursor: pointer;
   font-family: "Bebas Neue";
+  color: #000;
 }
 
 button:hover {
