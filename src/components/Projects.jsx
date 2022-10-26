@@ -12,7 +12,7 @@ const Projects = () => {
         <div className='projects-container'>
           <Link to="project/projektGreekGods">
             <div className='project'>
-              <h2 style={{backgroundColor: "#bc57ff"}}>Projekt Greek Gods</h2>
+              <h2 style={{backgroundColor: "#ff2f44"}}>Projekt Greek Gods</h2>
               <div className='project-layout'>
                 <img src={PGG} alt="projekt greek gods" style={{
                   objectFit: "cover", 
@@ -26,7 +26,7 @@ const Projects = () => {
             </Link>
             <Link to="project/diamondsInTheRough">
             <div className='project'>
-              <h2 style={{backgroundColor: "#5f90fa"}}>Diamonds In The Rough</h2>
+              <h2 style={{backgroundColor: "#41efff"}}>Diamonds In The Rough</h2>
               <div className='project-layout'>
                 <img src={WSB} alt="Diamonds in the rough" style={{
                   objectFit: "cover", 
@@ -39,7 +39,7 @@ const Projects = () => {
             </Link>
             <Link to="project/cvCreator">
               <div className='project'>
-                <h2 style={{backgroundColor: "#64fa5f"}}>CV Creator</h2>
+                <h2 style={{backgroundColor: "#ea2fff"}}>CV Creator</h2>
                 <div className='project-layout'>
                 <img src={CV} alt="cv" style={{
                   maxHeight: "300px",
@@ -63,7 +63,7 @@ const Projects = () => {
               </div>
             </Link>
             <div className='project'>
-              <h2 style={{backgroundColor: "#42eafc", borderBottom: "solid #000 3px"}}>E-Commerce Site</h2>
+              <h2 style={{backgroundColor: "#ffa31a", borderBottom: "solid #000 3px"}}>E-Commerce Site</h2>
               <div className='project-layout'>
                   <p style={{textAlign: "center", padding: ".5em 1em", fontSize: "1.2rem"}}>Coming soon</p>
               </div>

@@ -9,14 +9,14 @@ const Hero = () => {
                 <div className="hero-text">
                     <span className="text1" style={{
                         fontSize: "2rem",
-                    }}>Hi, my Name is</span>
+                    }}>Hi, my name is</span>
                     <span className="text2">Kamogelo Khumalo</span>
                     <span className="text3" style={{
                         fontSize: "2rem"
-                    }}>I am FullStack Devloper and I create things for the Interwebs</span>
+                    }}>I am a full stack developer and I create things for the Interwebs</span>
                 </div>
                 <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>
-                    <button type="text" className="btn">Projects</button>
+                    <button type="text" className="btn">View projects</button>
                 </Link>
             </div>
         </>

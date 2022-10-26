@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+  font-family: mabry;
+  src: url(Mabry-Pro-Medium.ttf);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 * {
   box-sizing: border-box;
@@ -12,7 +17,6 @@ body {
   margin: 0;
   overflow-y: scroll;
   background-color: #f5f5f5f5;
-  font-family: "Bebas Neue";
   overflow-x: hidden;
 }
 
@@ -23,32 +27,32 @@ body {
 
 h1 {
   font-size: 4rem;
-  text-decoration: underline;
   text-decoration-color: #000;
+  font-family: mabry;
 }
 
 h2 {
-  font-family: "Bebas Neue" !important;
-  text-decoration: underline;
-  border-radius: 5px;
+  font-family: mabry;
 }
 
 button {
-  border: solid 3px;
-  box-shadow: 5px 5px;
+  border: solid 2px;
+  border-radius: 5px;
   font-size: 2rem;
-  padding: 2px;
-  background-color: #51fc26;
+  padding: 0.2em 0.5em;
+  background-color: greenyellow;
   transition: all ease-in 100ms;
   width: fit-content;
   cursor: pointer;
-  font-family: "Bebas Neue";
+  font-family: mabry;
   color: #000;
+  transition: all 500ms ease;
 }
 
 button:hover {
-  background-color: #bc57ff;
-  transform: rotate(5deg) scale(1.1);
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.1);
 }
 
 /* Navigation */
@@ -57,13 +61,14 @@ button:hover {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #fcd926;
+  background-color: #000;
   width: 100vw;
   border-bottom: solid #000 3px;
   font-size: 2rem;
+  font-family: "Inter", sans-serif;
 }
 
-.navigation ul{
+.navigation ul {
   display: flex;
   flex-direction: row;
   padding: 5px 0;
@@ -73,10 +78,9 @@ button:hover {
 .navigation li {
   list-style: none;
 }
-.navigation ul li a{
-  padding: 0 1rem;
-  text-decoration: underline;
-  text-decoration-color: #000;
+.navigation ul li a {
+  margin: 0 1rem;
+  color: #fff;
   cursor: pointer;
 }
 
@@ -94,42 +98,43 @@ button:hover {
   flex-direction: column;
   font-size: 8rem;
   margin-bottom: 3rem;
+  font-family: "Inter", sans-serif;
 }
 
-.text1, .text2, .text3{
+.text1,
+.text2,
+.text3 {
   animation: moveUp linear 500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  font-family: mabry;
 }
 
-.text2{
+.text2 {
   animation: moveUp linear 1000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
-.text3{
+.text3 {
   animation: moveUp linear 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  font-family: "Inter";
 }
 
 @keyframes moveUp {
-  from{
+  from {
     transform: translateY(100px);
     opacity: 0;
   }
-  to{
+  to {
     transform: translateY(0);
     opacity: 1;
   }
 }
 
 /* About */
-.about {
-  min-height: 100vh;
-}
-
 .about-aside {
   display: flex;
   flex-direction: column;
@@ -140,18 +145,21 @@ button:hover {
   grid-template-columns: 2fr 5fr;
 }
 
-.description{
+.description {
   display: flex;
   flex-direction: column;
-  font-size: 1.5rem;
   margin-bottom: 50px;
 }
 
-.description p{
+.description p {
   width: 70%;
-  font-family: Arial
+  font-family: "Inter";
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5rem;
 }
-.about-text h1{
+.about-text h1 {
   font-size: 5rem;
   margin: 0;
 }
@@ -163,19 +171,20 @@ button:hover {
 }
 
 .skills-container div {
-  background-color: rgb(0, 0, 0);
-  color: #fff;
-  margin: 1em 1em;
-  padding: .3em .5em;
-  border: solid #000 3px;
-  box-shadow: #fc2626 5px 5px;
+  background-color: #adff2f;
+  color: #000;
+  border: solid 2px;
+  padding: 0.2em 0.5em;
+  margin: 0.6em;
   border-radius: 5px;
+  font-family: mabry;
   font-size: 1.2rem;
 }
 
 /* Projects */
- 
-.projects, .contact {
+
+.projects,
+.contact {
   margin: 0 5%;
 }
 
@@ -195,14 +204,12 @@ button:hover {
   align-items: center;
   padding: 0 1em;
 }
-.project{
+.project {
   background-color: #fff;
   height: fit-content;
   max-width: 600px;
   min-width: 300px;
-  border-radius: 5px;
-  border: solid #000 3px;
-  box-shadow: 10px 10px;
+  border: solid #000 2px;
   margin: 20px;
   transition: transform ease-in-out 200ms;
 }
@@ -211,14 +218,18 @@ button:hover {
   transform: scale(1.05);
 }
 
-.project p{
-  font-family: Arial;
+.project p {
+  font-family: "Inter";
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5rem;
 }
 .project h2 {
   margin: 0;
-  padding: .5em 1em;
-  background-color: #fcd926;
-  border-bottom: solid #000 3px;
+  padding: 0.5em 1em;
+  color: #000;
 }
 
 .tools {
@@ -229,21 +240,23 @@ button:hover {
 
 .tools div {
   background-color: rgb(255, 157, 0);
-  margin: .2em .2em;
-  padding: .3em .5em;
+  margin: 0.2em 0.2em;
+  padding: 0.3em 0.5em;
   border: solid #000 3px;
   border-radius: 5px;
   font-size: 1rem;
 }
 /* Footer */
 footer {
-  background-color: #fcd926;
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter";
   border-top: solid #000 3px;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   margin-top: 5rem;
 }
 
@@ -256,17 +269,11 @@ footer {
 
 a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .socials div span {
-  text-decoration: underline;
-  text-decoration-color: #fcd926;
   transition: text-decoration-color ease-in 200ms;
-}
-
-.socials div span:hover{
-  text-decoration-color: #000;
 }
 
 /* Contact */
@@ -277,30 +284,49 @@ a {
 
 .contact a {
   font-family: Arial;
-  text-decoration: underline;
-  text-decoration-color: #f5f5f5f5;
-  transition: text-decoration-color ease-in 200ms;
   color: #0072c6;
   padding-bottom: 5px;
 }
 
 .contact div {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-family: "Inter";
 }
 .details-layout a {
   font-family: Arial;
   text-decoration: underline;
-  text-decoration-color: #f5f5f5f5;
   transition: text-decoration-color ease-in 200ms;
   color: #0072c6;
 }
 
-.contact a:hover, .details-layout a:hover{
+.details-layout div div {
+  background-color: #adff2f !important;
+  color: #000 !important;
+  border: solid 2px !important;
+  padding: 0.2em 0.5em !important;
+  margin: 0.6em !important;
+  border-radius: 5px !important;
+  font-family: mabry !important;
+  font-size: 1.2rem !important;
+  box-shadow: none !important;
+}
+
+.details-layout p, .details-layout ul li {
+  font-family: "Inter";
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+
+.contact a:hover,
+.details-layout a:hover {
   text-decoration-color: #0072c6;
 }
 
 @media screen and (min-width: 2560px) {
-  .text1, .text3 {
+  .text1,
+  .text3 {
     font-size: 5rem !important;
   }
 
@@ -313,15 +339,15 @@ a {
     font-family: "Bebas Neue";
   }
 
-  .navigation ul li a{
+  .navigation ul li a {
     font-size: 3rem;
   }
-  
+
   .about-aside img {
     height: 400px !important;
   }
 
-  h1{
+  h1 {
     font-size: 7rem !important;
   }
 
@@ -357,7 +383,7 @@ a {
     font-size: 3rem;
   }
 
-  .details-layout{
+  .details-layout {
     font-size: 2rem;
   }
 
@@ -376,11 +402,16 @@ a {
     width: 322px !important;
   }
 }
-@media screen and (max-width: 425px){
-  .hero-section{
+@media screen and (max-width: 425px) {
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem !important;
+  }
+  .hero-section {
     padding: 0 1em;
   }
-  .text1, .text3 {
+  .text1,
+  .text3 {
     font-size: 1.5rem !important;
   }
   .text2 {
@@ -399,7 +430,11 @@ a {
   }
 
   .description p {
-    padding: 0
+    padding: 0 1.2em;
+  }
+
+  .about img {
+    margin-bottom: 3em;
   }
   .skills-container {
     padding: 0;
@@ -422,12 +457,16 @@ a {
     padding-right: 0;
   }
 
-  .contact div{
+  footer div{
+    display: flex;
+  }
+
+  .contact div {
     font-size: 1.5rem;
   }
 
   .project-details {
-    padding: 0 10px !important;
+    padding: 0 2em !important;
   }
   .project-details-container {
     display: flex !important;
@@ -442,6 +481,10 @@ a {
     font-size: 3rem;
     text-align: center;
   }
+
+  .navigation ul li a {
+    font-size: 1.3rem;
+  }
 }
 
 @media screen and (max-width: 375px) {
@@ -449,7 +492,7 @@ a {
     width: 250px !important;
   }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
   .project {
     width: 300px;
   }

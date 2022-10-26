@@ -24,17 +24,9 @@ const Footer = () => {
                 }}>LinkedIn</span>
               </div>
             </a>
-            <a href="https://twitter.com/kamo_io" target="_blank">
-              <div>
-                <BsTwitter/>
-                <span style={{
-                  padding: "0 .5em"
-                }}>Twitter</span>
-              </div>
-            </a>
         </div>
     </footer>
   )
 }
 
-export default Footer
+export default Footer;

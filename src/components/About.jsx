@@ -39,9 +39,7 @@ const About = () => {
                         in computers. My first obsession was making "art" in MS Paint. I quickly discovered that MS Paint 
                         was built with something called "code" and my love for creating things found itself a new outlet - programming.<br/>
                         In the last few years, I have dedicated myself to becoming a professional developer. This dedication resulted in
-                        me starting a community where I taught people the fundamentals of programming and recently going through the 100 days of code challenge.
-                        (I programmed and learned about programming, consistently, everyday for 100 days!)<br/><br/>
-                        I am constantly seeking new learning and opportunities. I would love to hear from you
+                        me starting a community where I taught people the fundamentals of programming. This was extremely fun but I am now looking to grow into more challenging positions. I would love to hear from you!
                     </p>
                 </div>
             </div>
