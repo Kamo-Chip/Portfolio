@@ -1,26 +1,40 @@
-import React from 'react';
-import Footer from './Footer';
+import React from "react";
+import Footer from "./Footer";
 import { BiLinkExternal } from "react-icons/bi";
+import { GrMail } from "react-icons/gr";
 
 const Contact = () => {
   return (
     <>
-      <section className='contact' id="contact">
+      <section className="contact" id="contact">
         <h1>Contact Me</h1>
-        <div style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center"
-        }}>
-          <p style={{
-            paddingRight: ".5em"
-          }}>Email:</p>
-          <a href="mailto:hellokamo04@gmail.com" target="_blank">hellokamo04@gmail.com<BiLinkExternal/></a>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+          }}
+        >
+          <div style={{ paddingRight: "1em", display: "flex", alignItems: "center"}}>
+            <GrMail />
+          </div>
+          <a
+            href="mailto:hellokamo04@gmail.com"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display:"flex",
+              alignItems: "center"
+            }}
+          >
+            hellokamo04@gmail.com
+            <BiLinkExternal />
+          </a>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

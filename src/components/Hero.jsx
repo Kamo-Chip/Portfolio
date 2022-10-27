@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-scroll";
-import Arrow from "../images/arrow.png";
 
 const Hero = () => {
     return (
@@ -13,7 +12,7 @@ const Hero = () => {
                     <span className="text2">Kamogelo Khumalo</span>
                     <span className="text3" style={{
                         fontSize: "2rem"
-                    }}>I am a full stack developer and I create things for the Interwebs</span>
+                    }}>I am a full stack developer.<br/>Welcome to my corner of the Internet.</span>
                 </div>
                 <Link to="projects" spy={true} smooth={true} offset={0} duration={500}>
                     <button type="text" className="btn">View projects</button>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BsGithub, BsTwitter, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const Footer = () => {
   return (
@@ -16,7 +16,7 @@ const Footer = () => {
                 }}>GitHub</span>
               </div>
             </a>
-            <a href="https://www.linkedin.com/in/kamogelo-khumalo-142b07222/" target="_blank">
+            <a href="https://www.linkedin.com/in/kamogelokhumalo/" target="_blank">
               <div>
                 <BsLinkedin/>
                 <span style={{

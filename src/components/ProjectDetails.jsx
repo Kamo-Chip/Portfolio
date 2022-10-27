@@ -1,24 +1,25 @@
-import React, { useState } from 'react'
-import { useParams } from 'react-router';
+import React, { useState } from "react";
+import { useParams } from "react-router";
 import PhonePgg from "../images/phonepgg.png";
 import MacCv from "../images/maccv.png";
 import Wsb from "../images/macwsb.png";
 import MacWeather from "../images/macweather.png";
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import { BiLinkExternal } from "react-icons/bi";
+import SkillsContainer from "./SkillsContainer";
 
 const ProjectDetails = () => {
   const { title } = useParams();
 
-  const [ imgSrc, setImgSrc ] = useState("");
-  const [ header, setHeader ] = useState("");
-  const [ purpose, setPurpose ] = useState("");
-  const [ challenges, setChallenges ] = useState("");
-  const [ link, setLink ] = useState("");
-  const [ tools, setTools ] = useState([]);
+  const [imgSrc, setImgSrc] = useState("");
+  const [header, setHeader] = useState("");
+  const [purpose, setPurpose] = useState("");
+  const [challenges, setChallenges] = useState("");
+  const [link, setLink] = useState("");
+  const [tools, setTools] = useState([]);
 
   const checkSource = () => {
-    switch(title) {
+    switch (title) {
       case "projektGreekGods":
         setImgSrc(PhonePgg);
         setPurpose(`I like to log my workouts - what exercises I did, how many reps I performed, how heavy the weights were, and so on.
@@ -34,7 +35,18 @@ const ProjectDetails = () => {
         <li>Making the application's features intuitive</li>
         <li>Displaying help screens to aid the user</li>`);
         setLink(`https://projektgreekgods.vercel.app/`);
-        setTools(["React", "Node" , "Firebase", "JavaScript", "HTML", "CSS", "React Icons", "Context API", "GitHub", "Vercel"]);
+        setTools([
+          "React",
+          "Node",
+          "Firebase",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "React Icons",
+          "Context API",
+          "GitHub",
+          "Vercel",
+        ]);
         break;
       case "diamondsInTheRough":
         setImgSrc(Wsb);
@@ -49,18 +61,39 @@ const ProjectDetails = () => {
         <li>Finding an effective charting library</li>
         <li>Figuring out how to display data on the chart</li>
         <li>Connecting to and getting data from the Alpha Vantage API</li>`);
-        setTools(["Alpha Vantage API", "TradingView LightWeight Charts", "React", "JavaScript", "Node", "Express", "Puppeteer", "Firebase", "GitHub", "Vercel"]);
+        setTools([
+          "Alpha Vantage API",
+          "TradingView LightWeight Charts",
+          "React",
+          "JavaScript",
+          "Node",
+          "Express",
+          "Puppeteer",
+          "Firebase",
+          "GitHub",
+          "Vercel",
+        ]);
         break;
       case "cvCreator":
         setImgSrc(MacCv);
         setHeader("CV Creator");
-        setPurpose(`I struggled to find a suitable online CV creator, so I built one. This project was built partly as a means of praciticing using React.`);
+        setPurpose(
+          `I struggled to find a suitable online CV creator, so I built one. This project was built partly as a means of praciticing using React.`
+        );
         setChallenges(`
         <li>How to pass props across components</li>
         <li>How to add and delete data from props</li>
         <li>Converting class components to functional components</li>`);
         setLink("https://kamo-chip.github.io/CV-Creator/");
-        setTools(["Devicon API", "React", "JavaScript", "HTML", "CSS", "Node", "GitHub"]);
+        setTools([
+          "Devicon API",
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Node",
+          "GitHub",
+        ]);
         break;
       case "weatherApp":
         setImgSrc(MacWeather);
@@ -72,59 +105,50 @@ const ProjectDetails = () => {
         <li>Using asynchronous JavaScript</li>
         <li>Communicating with OpenWeather API</li>`);
         setLink("https://kamo-chip.github.io/Weather-App/");
-        setTools(["OpenWeather API", "JavaScript", "HTML", "CSS", "Node", "GitHub"]);
+        setTools([
+          "OpenWeather API",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Node",
+          "GitHub",
+        ]);
         break;
       default:
     }
-  }
+  };
 
   useEffect(() => {
     checkSource();
   }, []);
 
   return (
-    <div className='project-details' style={{
-      padding: "0 3em",
-    }}>
+    <div className="project-details">
       <h1>{header}</h1>
-      <div className="project-details-container" style={{
-        display: "grid",
-        gridTemplateColumns: "1fr 4fr",
-      }}>
-        <img src={imgSrc} alt="phone" style={{
-          maxWidth: "600px",
-        }}/>
-        <div style={{fontFamily: "Arial"}} className="details-layout">
+      <div className="project-details-container">
+        <img
+          src={imgSrc}
+          alt="phone"
+          style={{
+            maxWidth: "600px",
+          }}
+        />
+        <div style={{ fontFamily: "Arial" }} className="details-layout">
+          <h2>Tech Stack and Tools</h2>
+          <SkillsContainer skills={tools} />
           <h2>Purpose of Project</h2>
           <p>{purpose}</p>
           <h2>Challenges I Faced</h2>
-          <ul dangerouslySetInnerHTML={{__html: challenges}}/>
+          <ul dangerouslySetInnerHTML={{ __html: challenges }} />
           <h2>Link</h2>
-          <a href={link} target="_blank">{header}<BiLinkExternal/></a>
-          <h2>Tech Stack and Tools</h2>
-          <div style={{
-            display: "flex",
-            flexWrap: "wrap",
-            fontFamily: "Bebas Neue",
-          }}>
-            {tools.map(element => {
-                return (
-                  <div style={{
-                    backgroundColor: "#000",
-                    color: "#fff",
-                    margin: "1em",
-                    padding: ".5em",
-                    borderRadius: "5px",
-                    border: "solid #000 3px",
-                    boxShadow: "#fc2626 5px 5px",
-                  }}>{element}</div>
-                )
-              })}
-          </div>
+          <a href={link} target="_blank">
+            {header}
+            <BiLinkExternal />
+          </a>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectDetails
+export default ProjectDetails;
