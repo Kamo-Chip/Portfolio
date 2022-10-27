@@ -2,6 +2,10 @@
   font-family: mabry;
   src: url(Mabry-Pro-Medium.ttf);
 }
+@font-face {
+  font-family: grifter;
+  src: url(grifterbold.otf);
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
@@ -29,6 +33,7 @@ h1 {
   font-size: 4rem;
   text-decoration-color: #000;
   font-family: mabry;
+  margin-bottom: 2rem !important;
 }
 
 h2 {
@@ -40,7 +45,7 @@ button {
   border-radius: 5px;
   font-size: 2rem;
   padding: 0.2em 0.5em;
-  background-color: greenyellow;
+  background-color: #D6ED17FF;
   transition: all ease-in 100ms;
   width: fit-content;
   cursor: pointer;
@@ -53,35 +58,6 @@ button:hover {
   background-color: #000;
   color: #fff;
   transform: scale(1.1);
-}
-
-/* Navigation */
-
-.navigation {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-  width: 100vw;
-  border-bottom: solid #000 3px;
-  font-size: 2rem;
-  font-family: "Inter", sans-serif;
-}
-
-.navigation ul {
-  display: flex;
-  flex-direction: row;
-  padding: 5px 0;
-  margin: 0;
-}
-
-.navigation li {
-  list-style: none;
-}
-.navigation ul li a {
-  margin: 0 1rem;
-  color: #fff;
-  cursor: pointer;
 }
 
 /* Hero */
@@ -104,20 +80,20 @@ button:hover {
 .text1,
 .text2,
 .text3 {
-  animation: moveUp linear 500ms;
+  animation: moveUp ease-in 1000ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-family: mabry;
 }
 
 .text2 {
-  animation: moveUp linear 1000ms;
+  animation: moveUp ease-in 1500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
 
 .text3 {
-  animation: moveUp linear 1500ms;
+  animation: moveUp ease 2500ms;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-family: "Inter";
@@ -171,7 +147,7 @@ button:hover {
 }
 
 .skills-container div {
-  background-color: #adff2f;
+  background-color: #D6ED17FF;
   color: #000;
   border: solid 2px;
   padding: 0.2em 0.5em;
@@ -232,19 +208,8 @@ button:hover {
   color: #000;
 }
 
-.tools {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.tools div {
-  background-color: rgb(255, 157, 0);
-  margin: 0.2em 0.2em;
-  padding: 0.3em 0.5em;
-  border: solid #000 3px;
-  border-radius: 5px;
-  font-size: 1rem;
+.projects-container a {
+  height: fit-content;
 }
 /* Footer */
 footer {
@@ -258,6 +223,10 @@ footer {
   justify-content: space-between;
   padding: 0.5em 1em;
   margin-top: 5rem;
+}
+
+footer a:hover {
+  color: #D6ED17FF;
 }
 
 .socials {
@@ -283,24 +252,17 @@ a {
 }
 
 .contact a {
-  font-family: Arial;
+  font-family: "Inter";
   color: #0072c6;
-  padding-bottom: 5px;
 }
 
 .contact div {
   font-size: 1.5rem;
   font-family: "Inter";
 }
-.details-layout a {
-  font-family: Arial;
-  text-decoration: underline;
-  transition: text-decoration-color ease-in 200ms;
-  color: #0072c6;
-}
 
 .details-layout div div {
-  background-color: #adff2f !important;
+  background-color: #D6ED17FF !important;
   color: #000 !important;
   border: solid 2px !important;
   padding: 0.2em 0.5em !important;
@@ -311,7 +273,8 @@ a {
   box-shadow: none !important;
 }
 
-.details-layout p, .details-layout ul li {
+.details-layout p,
+.details-layout ul li {
   font-family: "Inter";
   font-size: 1.2rem;
   font-weight: 500;
@@ -319,185 +282,19 @@ a {
   line-height: 1.5rem;
 }
 
-.contact a:hover,
-.details-layout a:hover {
-  text-decoration-color: #0072c6;
+/* Project Details */
+
+.project-details h1 {
+  color: #fff;
+  background-color: #000;
+  width: 100%;
+  padding: .2em .5em;
 }
 
-@media screen and (min-width: 2560px) {
-  .text1,
-  .text3 {
-    font-size: 5rem !important;
-  }
-
-  .text2 {
-    font-size: 15rem;
-  }
-
-  button {
-    font-size: 4rem;
-    font-family: "Bebas Neue";
-  }
-
-  .navigation ul li a {
-    font-size: 3rem;
-  }
-
-  .about-aside img {
-    height: 400px !important;
-  }
-
-  h1 {
-    font-size: 7rem !important;
-  }
-
-  .skills-container div {
-    font-size: 2rem;
-  }
-
-  .description p {
-    font-size: 2rem;
-  }
-
-  .project h2 {
-    font-size: 2.8rem;
-  }
-
-  .project-layout img {
-    max-width: 500px !important;
-  }
-
-  .project {
-    max-width: 800px;
-  }
-
-  footer {
-    font-size: 2rem;
-  }
-
-  .project-details-container img {
-    max-width: 800px !important;
-  }
-
-  .details-layout h2 {
-    font-size: 3rem;
-  }
-
-  .details-layout {
-    font-size: 2rem;
-  }
-
-  .contact div {
-    font-size: 4rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .description p {
-    width: 100%;
-    padding-right: 50px;
-  }
-
-  .project-details-container img {
-    width: 322px !important;
-  }
-}
-@media screen and (max-width: 425px) {
-  h1 {
-    text-align: center;
-    margin-bottom: 2rem !important;
-  }
-  .hero-section {
-    padding: 0 1em;
-  }
-  .text1,
-  .text3 {
-    font-size: 1.5rem !important;
-  }
-  .text2 {
-    font-size: 5rem;
-  }
-
-  .hero-section a {
-    display: flex;
-    justify-content: center;
-  }
-
-  .details-container {
-    display: flex;
-    flex-direction: column;
-    padding: 0 20px;
-  }
-
-  .description p {
-    padding: 0 1.2em;
-  }
-
-  .about img {
-    margin-bottom: 3em;
-  }
-  .skills-container {
-    padding: 0;
-  }
-
-  .skills-container div {
-    margin: 8px;
-  }
-
-  .project-layout img {
-    width: 300px;
-  }
-
-  .socials {
-    align-items: flex-end;
-  }
-
-  footer {
-    font-size: 1rem;
-    padding-right: 0;
-  }
-
-  footer div{
-    display: flex;
-  }
-
-  .contact div {
-    font-size: 1.5rem;
-  }
-
-  .project-details {
-    padding: 0 2em !important;
-  }
-  .project-details-container {
-    display: flex !important;
-    flex-direction: column !important;
-  }
-
-  .project-details-container img {
-    align-self: center;
-  }
-  .project-details h1 {
-    margin: 20px 0 0 0;
-    font-size: 3rem;
-    text-align: center;
-  }
-
-  .navigation ul li a {
-    font-size: 1.3rem;
-  }
-}
-
-@media screen and (max-width: 375px) {
-  .project-layout img {
-    width: 250px !important;
-  }
-}
-@media screen and (max-width: 320px) {
-  .project {
-    width: 300px;
-  }
-
-  .contact div {
-    font-size: 1.2rem;
-  }
+.project-details a {
+  color: #0072c6;
+  display: flex;
+  flex-direction: row;
+  font-family: "Inter";
+  font-size: 1.2rem;
 }
