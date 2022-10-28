@@ -115,7 +115,8 @@
   }
 
   .nav-list li {
-    padding-bottom: 1em;
+    padding: .8em 0;
+    width: fit-content;
   }
 
   .nav-icon-container {
