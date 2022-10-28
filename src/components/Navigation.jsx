@@ -84,6 +84,7 @@ const Navigation = () => {
             target="_blank"
             rel="noreferrer"
             style={{ color: "#fff" }}
+            onClick={closeNav}
           >
             <BsGithub size="1.7rem" color="#fff" />
           </a>
@@ -92,6 +93,7 @@ const Navigation = () => {
             target="_blank"
             rel="noreferrer"
             style={{ color: "#fff" }}
+            onClick={closeNav}
           >
             <BsLinkedin size="1.7rem" color="#fff" />
           </a>
