@@ -26,15 +26,18 @@
   font-size: 2rem;
   -webkit-animation: moveUp 1000ms ease-in 1 forwards;
           animation: moveUp 1000ms ease-in 1 forwards;
+  will-change: transform, opacity;
 }
 
 .text2 {
+  will-change: transform, opacity;
   -webkit-animation: moveUp 1000ms ease-in 500ms 1 forwards;
           animation: moveUp 1000ms ease-in 500ms 1 forwards;
   font-size: 8rem;
 }
 
 .text3 {
+  will-change: transform, opacity;
   -webkit-animation: moveUp 1000ms ease-in 1000ms 1 forwards;
           animation: moveUp 1000ms ease-in 1000ms 1 forwards;
   font-family: "Inter";
