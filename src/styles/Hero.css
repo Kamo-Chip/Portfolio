@@ -18,10 +18,11 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-family: mabry;
+  padding-bottom: 0.5rem;
 }
 
 .text1 {
-  animation: moveUp ease-in 1000ms;
+  animation: moveUp linear 1000ms;
   font-size: 2rem;
 }
 
