@@ -1,10 +1,11 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import "../styles/Footer.css";
 
 const Footer = () => {
   return (
     <footer>
-        <div>
+        <div className="tag">
             <span>Built and designed by Kamogelo Khumalo</span>
         </div>
         <div className='socials'>

@@ -1,6 +1,7 @@
 import React from "react";
 import Me from "../images/Me.jpg";
 import SkillsContainer from "./SkillsContainer";
+import "../styles/About.css";
 
 const About = () => {
   const skills = [

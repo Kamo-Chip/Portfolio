@@ -1,0 +1,58 @@
+.projects {
+  padding-left: 10%;
+}
+
+.projects-container {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.project-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1em;
+}
+.project {
+  background-color: #fff;
+  height: fit-content;
+  max-width: 600px;
+  min-width: 300px;
+  border: solid #000 2px;
+  margin: 20px;
+  transition: transform ease-in-out 200ms;
+}
+
+.project:hover {
+  transform: scale(1.05);
+}
+
+.project p {
+  font-family: "Inter";
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+.project h2 {
+  margin: 0;
+  padding: 0.5em 1em;
+  color: #000;
+}
+
+.projects-container a {
+  height: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+  .projects {
+    padding: 0;
+  }
+}
+@media screen and (max-width: 500px) {
+    .project img{
+        max-width: 90%;
+    }
+}

@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "./Footer";
 import { BiLinkExternal } from "react-icons/bi";
 import { GrMail } from "react-icons/gr";
+import "../styles/Contact.css";
 
 const Contact = () => {
   return (
@@ -15,7 +16,7 @@ const Contact = () => {
             alignItems: "center",
           }}
         >
-          <div style={{ paddingRight: "1em", display: "flex", alignItems: "center"}}>
+          <div style={{ paddingRight: ".8em", display: "flex", alignItems: "center"}}>
             <GrMail />
           </div>
           <a

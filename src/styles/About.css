@@ -1,0 +1,73 @@
+/* About */
+.about-aside {
+  display: flex;
+  flex-direction: column;
+}
+
+.details-container {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.description p {
+  width: 70%;
+  font-family: "Inter";
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5rem;
+}
+.about-text h1 {
+  margin: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-text {
+    padding: 2em;
+    margin-top: 2em;
+  }
+
+  .skills-container {
+    padding: 0;
+  }
+
+  .description {
+    align-items: center;
+    padding: 0 2em;
+  }
+
+  .description p {
+    width: 100%;
+  }
+
+  .skills-container div {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+ .about-text {
+    padding: 0 .5em;
+ }
+}
+
+@media screen and (max-width: 320px){
+    .description {
+        padding: 0 1.5em;
+    }
+}

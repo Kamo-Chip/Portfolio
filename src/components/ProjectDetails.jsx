@@ -7,6 +7,7 @@ import MacWeather from "../images/macweather.png";
 import { useEffect } from "react";
 import { BiLinkExternal } from "react-icons/bi";
 import SkillsContainer from "./SkillsContainer";
+import "../styles/ProjectDetails.css";
 
 const ProjectDetails = () => {
   const { title } = useParams();

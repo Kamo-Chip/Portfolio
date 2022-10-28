@@ -1,4 +1,5 @@
 import React from "react";
+import "../styles/Projects.css";
 
 const Project = ({name, image, color, description}) => {
   return (

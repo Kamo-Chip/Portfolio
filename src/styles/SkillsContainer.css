@@ -1,0 +1,30 @@
+.skills-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: 5em;
+  padding: .5em 0;
+}
+
+.skills-container div {
+  background-color: var(--accent2);
+  color: #000;
+  border: solid 2px;
+  padding: 0.2em 0.5em;
+  margin: 0.3em;
+  border-radius: 5px;
+  font-family: mabry;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .skills-container div {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .skills-container {
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}

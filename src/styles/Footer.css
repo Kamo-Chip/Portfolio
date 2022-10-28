@@ -1,0 +1,45 @@
+footer {
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter";
+  border-top: solid #000 3px;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  margin-top: 5rem;
+}
+
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  color: var(--accent2);
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: fit-content;
+}
+
+.socials div span {
+  transition: text-decoration-color ease-in 200ms;
+}
+
+@media screen and (max-width: 600px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        margin-top: 1em; 
+    }
+
+    .tag {
+        text-align: center;
+    }
+} 

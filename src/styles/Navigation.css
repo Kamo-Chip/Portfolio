@@ -1,10 +1,8 @@
-/* Navigation */
-
 .navigation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #000;
+  background-color: var(--accent1);
   width: 100vw;
   padding: 0.5em 1em;
   color: #fff;
@@ -34,18 +32,31 @@
 }
 
 .nav-list li a:hover {
-  color: #D6ED17FF;
+  color: var(--accent2);
 }
 
 .nav-on {
   display: flex !important;
   flex-direction: column;
   color: #000;
-  position: absolute;
   right: -300px;
   top: 0;
   padding-right: 1.5em;
-  background-color: #606060FF;
+  background-color: var(--accent3);
+  height: 100vh;
+  z-index: 5;
+  position: fixed;
+  animation: slideIn 500ms ease 0ms 1 forwards;
+}
+
+.nav-off {
+  display: flex !important;
+  flex-direction: column;
+  color: #000;
+  right: 0;
+  top: 0;
+  padding-right: 1.5em;
+  background-color: var(--accent3);
   height: 100vh;
   z-index: 5;
   position: fixed;
@@ -53,6 +64,12 @@
 }
 
 @keyframes slideOut {
+  100% {
+    right: -300px;
+  }
+}
+
+@keyframes slideIn {
   100% {
     right: 0;
   }
@@ -85,12 +102,11 @@
     position: absolute;
     right: 0;
     top: 0;
-    padding: .5em 1em 0 0;
+    padding: 0.5em 1em 0 0;
     z-index: 15;
   }
 
   .nav-socials {
-    /* display: flex; */
     flex-direction: row;
     width: 45%;
     align-items: center;
@@ -103,6 +119,6 @@
   }
 
   .logo {
-    padding: .2em;
+    padding: 0.2em;
   }
 }

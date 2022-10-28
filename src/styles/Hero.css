@@ -1,0 +1,142 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  padding-left: 10%;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.text1,
+.text2,
+.text3 {
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  font-family: mabry;
+  padding-bottom: .5rem;
+}
+
+.text1 {
+  animation: moveUp ease-in 1000ms;
+  font-size: 2rem;
+}
+
+.text2 {
+  animation: moveUp ease-in 1500ms;
+  font-size: 8rem;
+}
+
+.text3 {
+  animation: moveUp ease 2500ms;
+  font-family: "Inter";
+  font-size: 2rem;
+}
+
+.hero-section button {
+  border: solid 2px;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding: 0.2em 0.5em;
+  background-color: var(--accent2);
+  transition: all ease-in 100ms;
+  width: fit-content;
+  cursor: pointer;
+  font-family: mabry;
+  color: #000;
+  transition: all 500ms ease;
+}
+
+.hero-section button:hover {
+  background-color: var(--accent3);
+  color: var(--accent2);
+  transform: scale(1.05);
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+        
+}
+
+@media screen and (min-width: 1440px) {
+  .hero-section {
+    padding-left: 5em;
+  }
+
+  .text2 {
+    font-size: 8rem;
+  }
+
+  .text1 {
+    font-size: 3rem;
+  }
+
+  .text3 {
+    font-size: 2.5rem;
+  }
+
+  .hero-section button {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .hero-section {
+    padding: 0;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .hero-text {
+    padding-top: 4em;
+    padding-left: 3em;
+  }
+
+  .text2 {
+    font-size: 5rem;
+  }
+
+  .text1 {
+    font-size: 2rem;
+  }
+
+  .text3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-text {
+    padding-left: 2em;
+  }
+
+  .text2 {
+    font-size: 3.8rem;
+  }
+
+  .text1 {
+    font-size: 1.9rem;
+  }
+
+  .text3 {
+    font-size: 1.27rem;
+  }
+
+  .hero-section button {
+    font-size: 1.9rem;
+  }
+}

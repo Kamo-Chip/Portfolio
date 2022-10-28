@@ -12,9 +12,11 @@ const Navigation = () => {
 
     if (showNavItems) {
       nav.classList.remove("nav-on");
+      nav.classList.add("nav-off");
       document.querySelector(".nav-socials").classList.add("disappear");
       setShowNavItems(false);
     } else {
+      nav.classList.remove("nav-off");
       nav.classList.add("nav-on");
       document.querySelector(".nav-socials").classList.remove("disappear");
       document.querySelector(".nav-socials").style.display = "flex";

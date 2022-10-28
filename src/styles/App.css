@@ -1,13 +1,20 @@
 @font-face {
   font-family: mabry;
-  src: url(Mabry-Pro-Medium.ttf);
+  src: url(./fonts/Mabry-Pro-Medium.ttf);
 }
 @font-face {
   font-family: grifter;
-  src: url(grifterbold.otf);
+  src: url(./fonts/grifterbold.otf);
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --bg: #f5f5f5f5;
+  --accent1: #000;
+  --accent2: #d6ed17ff;
+  --accent3: #606060ff;
+}
 
 * {
   box-sizing: border-box;
@@ -40,261 +47,24 @@ h2 {
   font-family: mabry;
 }
 
-button {
-  border: solid 2px;
-  border-radius: 5px;
-  font-size: 2rem;
-  padding: 0.2em 0.5em;
-  background-color: #D6ED17FF;
-  transition: all ease-in 100ms;
-  width: fit-content;
-  cursor: pointer;
-  font-family: mabry;
-  color: #000;
-  transition: all 500ms ease;
-}
-
-button:hover {
-  background-color: #000;
-  color: #fff;
-  transform: scale(1.1);
-}
-
-/* Hero */
-.hero-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100vh;
-  padding-left: 10%;
-}
-
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  font-size: 8rem;
-  margin-bottom: 3rem;
-  font-family: "Inter", sans-serif;
-}
-
-.text1,
-.text2,
-.text3 {
-  animation: moveUp ease-in 1000ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  font-family: mabry;
-}
-
-.text2 {
-  animation: moveUp ease-in 1500ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-}
-
-.text3 {
-  animation: moveUp ease 2500ms;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  font-family: "Inter";
-}
-
-@keyframes moveUp {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-/* About */
-.about-aside {
-  display: flex;
-  flex-direction: column;
-}
-
-.details-container {
-  display: grid;
-  grid-template-columns: 2fr 5fr;
-}
-
-.description {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 50px;
-}
-
-.description p {
-  width: 70%;
-  font-family: "Inter";
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.5rem;
-}
-.about-text h1 {
-  font-size: 5rem;
-  margin: 0;
-}
-
-.skills-container {
-  display: flex;
-  flex-flow: row wrap;
-  padding-right: 5em;
-}
-
-.skills-container div {
-  background-color: #D6ED17FF;
-  color: #000;
-  border: solid 2px;
-  padding: 0.2em 0.5em;
-  margin: 0.6em;
-  border-radius: 5px;
-  font-family: mabry;
-  font-size: 1.2rem;
-}
-
-/* Projects */
-
-.projects,
-.contact {
-  margin: 0 5%;
-}
-
-.projects h1 {
-  margin: 0;
-}
-
-.projects-container {
-  display: flex;
-  justify-content: space-around;
-  flex-flow: row wrap;
-}
-
-.project-layout {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0 1em;
-}
-.project {
-  background-color: #fff;
-  height: fit-content;
-  max-width: 600px;
-  min-width: 300px;
-  border: solid #000 2px;
-  margin: 20px;
-  transition: transform ease-in-out 200ms;
-}
-
-.project:hover {
-  transform: scale(1.05);
-}
-
-.project p {
-  font-family: "Inter";
-  color: #000;
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.5rem;
-}
-.project h2 {
-  margin: 0;
-  padding: 0.5em 1em;
-  color: #000;
-}
-
-.projects-container a {
-  height: fit-content;
-}
-/* Footer */
-footer {
-  background-color: #000;
-  color: #fff;
-  font-family: "Inter";
-  border-top: solid #000 3px;
-  font-size: 1.2rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0.5em 1em;
-  margin-top: 5rem;
-}
-
-footer a:hover {
-  color: #D6ED17FF;
-}
-
-.socials {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: fit-content;
-}
-
 a {
   text-decoration: none;
-  color: #fff;
 }
 
-.socials div span {
-  transition: text-decoration-color ease-in 200ms;
+@media screen and (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
 }
 
-/* Contact */
-
-.contact h1 {
-  margin-bottom: 20px;
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 3.5rem;
+  }
 }
 
-.contact a {
-  font-family: "Inter";
-  color: #0072c6;
-}
-
-.contact div {
-  font-size: 1.5rem;
-  font-family: "Inter";
-}
-
-.details-layout div div {
-  background-color: #D6ED17FF !important;
-  color: #000 !important;
-  border: solid 2px !important;
-  padding: 0.2em 0.5em !important;
-  margin: 0.6em !important;
-  border-radius: 5px !important;
-  font-family: mabry !important;
-  font-size: 1.2rem !important;
-  box-shadow: none !important;
-}
-
-.details-layout p,
-.details-layout ul li {
-  font-family: "Inter";
-  font-size: 1.2rem;
-  font-weight: 500;
-  font-style: normal;
-  line-height: 1.5rem;
-}
-
-/* Project Details */
-
-.project-details h1 {
-  color: #fff;
-  background-color: #000;
-  width: 100%;
-  padding: .2em .5em;
-}
-
-.project-details a {
-  color: #0072c6;
-  display: flex;
-  flex-direction: row;
-  font-family: "Inter";
-  font-size: 1.2rem;
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
