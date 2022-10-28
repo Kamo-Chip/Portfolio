@@ -51,6 +51,20 @@ a {
   text-decoration: none;
 }
 
+@media screen and (min-width: 2000px) {
+  #root {
+    padding: 0 10em;
+  }  
+
+  h1 {
+    font-size: 7rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     text-align: center;

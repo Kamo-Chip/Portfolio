@@ -1,5 +1,6 @@
 .contact {
   padding-left: 10%;
+  margin-bottom: 5rem;
 }
 
 .contact a {
@@ -10,6 +11,16 @@
 .contact div {
   font-size: 2rem;
   font-family: "Inter";
+}
+
+@media screen and (min-width: 2000px) {
+  .contact {
+    padding: 0;
+  }
+
+  .contact div {
+    font-size: 3rem;
+  }
 }
 
 @media screen and (max-width: 768px) {

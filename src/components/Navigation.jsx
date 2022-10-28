@@ -29,7 +29,7 @@ const Navigation = () => {
 
   return (
     <nav className="navigation">
-      <span className="logo">Kamo.</span>
+      <span className="logo">Kamo</span>
       <div className="nav-items-container">
         <div onClick={toggleNav} className="nav-icon-container">
           {showNavItems ? <HiX size="2rem" /> : <HiMenuAlt4 size="2rem" />}

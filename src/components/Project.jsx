@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Projects.css";
 
-const Project = ({name, image, color, description}) => {
+const Project = ({ name, image, color, description }) => {
   return (
     <div className="project">
       <h2 style={{ backgroundColor: color }}>{name}</h2>
@@ -16,11 +16,7 @@ const Project = ({name, image, color, description}) => {
           }}
         />
       </div>
-      <p
-        style={{ textAlign: "center", padding: ".5em 1em", fontSize: "1.2rem" }}
-      >
-        {description}
-      </p>
+      <p>{description}</p>
     </div>
   );
 };

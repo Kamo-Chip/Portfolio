@@ -8,7 +8,9 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   padding: 0.5em 1em;
-  margin-top: 5rem;
+  position: absolute;
+  width: 100%;
+  left: 0;
 }
 
 footer a {
@@ -29,6 +31,11 @@ footer a:hover {
   transition: text-decoration-color ease-in 200ms;
 }
 
+@media screen and (min-width: 2000px) {
+  footer {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 600px){
     footer{
         flex-direction: column;

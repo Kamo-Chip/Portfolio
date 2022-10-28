@@ -18,7 +18,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   font-family: mabry;
-  padding-bottom: .5rem;
+  padding-bottom: 0.5rem;
 }
 
 .text1 {
@@ -68,10 +68,6 @@
   }
 }
 
-@media screen and (min-width: 2000px) {
-        
-}
-
 @media screen and (min-width: 1440px) {
   .hero-section {
     padding-left: 5em;
@@ -93,6 +89,29 @@
     font-size: 2.5rem;
   }
 }
+
+@media screen and (min-width: 2000px) {
+  .hero-section {
+    padding-left: 0;
+  }
+
+  .text2 {
+    font-size: 12rem;
+  }
+
+  .text1 {
+    font-size: 5rem;
+  }
+
+  .text3 {
+    font-size: 3.5rem;
+  }
+
+  .hero-section button {
+    font-size: 3.5rem;
+  }
+}
+
 
 @media screen and (max-width: 700px) {
   .hero-section {

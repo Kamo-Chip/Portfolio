@@ -33,7 +33,7 @@ const Projects = () => {
             image={CV}
             color="#2fffab"
             description="Creates a CV based on the user's input. Provides beautiful
-            customisability."
+            customisability"
           />
         </Link>
         <Link to="project/weatherApp">
@@ -41,7 +41,7 @@ const Projects = () => {
             name="Weather App"
             image={Weather}
             color="#fe2fff"
-            description="Displays up to date weather forecasts on any city in the world."
+            description="Displays up to date weather forecasts on any city in the world"
           />
         </Link>
       </div>

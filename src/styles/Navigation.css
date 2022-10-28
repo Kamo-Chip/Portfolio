@@ -3,7 +3,10 @@
   align-items: center;
   justify-content: space-between;
   background-color: var(--accent1);
-  width: 100vw;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   padding: 0.5em 1em;
   color: #fff;
 }
@@ -84,6 +87,20 @@
 
 .disappear {
   display: none !important;
+}
+
+@media screen and (min-width: 2000px) {
+  .navigation {
+    padding: 1em 2em;
+  }
+
+  .nav-list {
+    font-size: 3rem;
+  }
+
+  .logo {
+    font-size: 3.2rem;
+  }
 }
 
 @media screen and (max-width: 600px) {

@@ -35,6 +35,8 @@
   font-weight: 500;
   font-style: normal;
   line-height: 1.5rem;
+  text-align: center;
+  padding: .5em 1em;
 }
 .project h2 {
   margin: 0;
@@ -46,13 +48,28 @@
   height: fit-content;
 }
 
+@media screen and (min-width: 2000px) {
+  .project{
+    max-width: 900px;
+  }
+
+  .project p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .projects {
+    padding: 0;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .projects {
     padding: 0;
   }
 }
 @media screen and (max-width: 500px) {
-    .project img{
-        max-width: 90%;
-    }
+  .project img {
+    max-width: 90%;
+  }
 }

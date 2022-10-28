@@ -27,12 +27,7 @@ const About = () => {
           <img
             src={Me}
             alt="A headshot of me"
-            style={{
-              height: "180px",
-              alignSelf: "center",
-              border: "solid #000 2px",
-              borderRadius: "50%",
-            }}
+            className="picture-me"
           />
         </div>
         <div className="about-text">

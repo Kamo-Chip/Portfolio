@@ -1,9 +1,14 @@
-/* About */
 .about-aside {
   display: flex;
   flex-direction: column;
 }
 
+.picture-me {
+  height: 180px;
+  align-self: center;
+  border: solid #000 2px;
+  border-radius: 50%;
+}
 .details-container {
   display: grid;
   grid-template-columns: 2fr 5fr;
@@ -27,6 +32,16 @@
   margin: 0;
 }
 
+@media screen and (min-width: 2000px) {
+  .about-aside img {
+    height: 300px;
+  }
+
+  .description p{
+    font-size: 2.2rem;
+    line-height: 2.8125rem;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .details-container {
@@ -41,10 +56,6 @@
     margin-top: 2em;
   }
 
-  .skills-container {
-    padding: 0;
-  }
-
   .description {
     align-items: center;
     padding: 0 2em;
@@ -53,21 +64,16 @@
   .description p {
     width: 100%;
   }
-
-  .skills-container div {
-    font-size: 1rem;
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 425px) {
- .about-text {
-    padding: 0 .5em;
- }
+  .about-text {
+    padding: 0 0.5em;
+  }
 }
 
-@media screen and (max-width: 320px){
-    .description {
-        padding: 0 1.5em;
-    }
+@media screen and (max-width: 320px) {
+  .description {
+    padding: 0 1.5em;
+  }
 }
