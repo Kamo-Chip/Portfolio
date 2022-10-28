@@ -16,7 +16,6 @@ footer {
 footer a {
   color: #fff;
 }
-
 footer a:hover {
   color: var(--accent2);
 }
@@ -25,15 +24,11 @@ footer a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
 }
 
 .socials div span {
-  transition: -webkit-text-decoration-color ease-in 200ms;
   transition: text-decoration-color ease-in 200ms;
-  transition: text-decoration-color ease-in 200ms, -webkit-text-decoration-color ease-in 200ms;
 }
 
 @media screen and (min-width: 2000px) {
@@ -41,15 +36,17 @@ footer a:hover {
     font-size: 2rem;
   }
 }
-@media screen and (max-width: 600px) {
-  footer {
-    flex-direction: column;
-    align-items: center;
-  }
-  .socials {
-    margin-top: 1em;
-  }
-  .tag {
-    text-align: center;
-  }
-}/*# sourceMappingURL=Footer.css.map */
+@media screen and (max-width: 600px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socials {
+        margin-top: 1em; 
+    }
+
+    .tag {
+        text-align: center;
+    }
+} 

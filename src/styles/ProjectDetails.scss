@@ -26,7 +26,6 @@
   font-style: normal;
   line-height: 1.5rem;
 }
-
 .project-details h1 {
   color: #fff;
   background-color: #000;
@@ -49,50 +48,59 @@
     position: absolute;
     left: 0;
   }
+
   .project-details-container {
     display: grid;
     grid-template-columns: 2fr 3fr;
     padding: 0;
     padding-top: 12em;
   }
+
   .project-details-container img {
     min-height: 40%;
     min-width: 537px;
   }
+
   .details-layout p, .details-layout ul li {
     font-size: 2.2rem;
     line-height: 2.8125rem;
-  }
+  }  
+
   .project-details a {
     font-size: 2.2rem;
   }
 }
+
 @media screen and (max-width: 1440px) {
   .project-details-container img {
     max-width: 450px;
   }
 }
+
 @media screen and (max-width: 768px) {
-  .project-details-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .details-layout {
-    padding: 0;
-    padding-bottom: 1em;
-  }
-  .project-details-container img {
-    max-width: 450px !important;
-  }
+    .project-details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-layout {
+        padding: 0;
+        padding-bottom: 1em;
+    }
+
+    .project-details-container img {
+        max-width: 450px !important;
+    }
 }
+
 @media screen and (max-width: 425px) {
   .project-details-container img {
     max-width: 100% !important;
   }
 }
 @media screen and (max-width: 400px) {
-  .project-details-container {
-    padding: 0 2em;
-  }
-}/*# sourceMappingURL=ProjectDetails.css.map */
+    .project-details-container {
+        padding: 0 2em;
+    }
+}

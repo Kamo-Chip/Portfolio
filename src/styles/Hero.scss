@@ -22,19 +22,16 @@
 
 .text1 {
   font-size: 2rem;
-  -webkit-animation: moveUp 1000ms ease-in 1 forwards;
-          animation: moveUp 1000ms ease-in 1 forwards;
+  animation: moveUp 1000ms ease-in 1 forwards;
 }
 
 .text2 {
-  -webkit-animation: moveUp 1000ms ease-in 500ms 1 forwards;
-          animation: moveUp 1000ms ease-in 500ms 1 forwards;
+  animation: moveUp 1000ms ease-in 500ms 1 forwards;
   font-size: 8rem;
 }
 
 .text3 {
-  -webkit-animation: moveUp 1000ms ease-in 1000ms 1 forwards;
-          animation: moveUp 1000ms ease-in 1000ms 1 forwards;
+  animation: moveUp 1000ms ease-in 1000ms 1 forwards;
   font-family: "Inter";
   font-size: 2rem;
 }
@@ -46,8 +43,6 @@
   padding: 0.2em 0.5em;
   background-color: var(--accent2);
   transition: all ease-in 100ms;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
   font-family: mabry;
@@ -61,17 +56,6 @@
   transform: scale(1.05);
 }
 
-@-webkit-keyframes moveUp {
-  from {
-    transform: translateY(100px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
 @keyframes moveUp {
   from {
     transform: translateY(100px);
@@ -81,76 +65,96 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
+} 
+
 @media screen and (min-width: 1440px) {
   .hero-section {
     padding-left: 5em;
   }
+
   .text2 {
     font-size: 8rem;
   }
+
   .text1 {
     font-size: 3rem;
   }
+
   .text3 {
     font-size: 2.5rem;
   }
+
   .hero-section button {
     font-size: 2.5rem;
   }
 }
+
 @media screen and (min-width: 2000px) {
   .hero-section {
     padding-left: 0;
   }
+
   .text2 {
     font-size: 12rem;
   }
+
   .text1 {
     font-size: 5rem;
   }
+
   .text3 {
     font-size: 3.5rem;
   }
+
   .hero-section button {
     font-size: 3.5rem;
   }
 }
+
 @media screen and (max-width: 700px) {
   .hero-section {
     padding: 0;
     justify-content: flex-start;
     align-items: center;
   }
+
   .hero-text {
     padding-top: 4em;
     padding-left: 3em;
   }
+
   .text2 {
     font-size: 5rem;
   }
+
   .text1 {
     font-size: 2rem;
   }
+
   .text3 {
     font-size: 1.5rem;
   }
 }
+
 @media screen and (max-width: 500px) {
   .hero-text {
     padding-left: 2em;
     padding-top: 12em;
   }
+
   .text2 {
     font-size: 3.8rem;
   }
+
   .text1 {
     font-size: 1.9rem;
   }
+
   .text3 {
     font-size: 1.27rem;
   }
+
   .hero-section button {
     font-size: 1.9rem;
   }
-}/*# sourceMappingURL=Hero.css.map */
+}

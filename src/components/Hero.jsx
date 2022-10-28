@@ -1,8 +1,8 @@
-import React from "react";
 import { Link } from "react-scroll";
 import "../styles/Hero.css";
 
 const Hero = () => {
+
   return (
     <div className="hero-section">
       <div className="hero-text">

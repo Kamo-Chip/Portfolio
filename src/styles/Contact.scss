@@ -17,30 +17,36 @@
   .contact {
     padding: 0;
   }
+
   .contact div {
     font-size: 3rem;
   }
 }
+
 @media screen and (max-width: 768px) {
   .contact {
     padding: 0;
   }
+
   .contact div {
     justify-content: center;
   }
 }
+
 @media screen and (max-width: 500px) {
-  .contact div {
-    font-size: 1.7rem;
-  }
+    .contact div {
+        font-size: 1.7rem;
+    }
 }
+
 @media screen and (max-width: 425px) {
-  .contact div {
-    font-size: 1.3rem;
-  }
+    .contact div {
+        font-size: 1.3rem;
+    }
 }
+
 @media screen and (max-width: 320px) {
-  .contact div {
-    font-size: 1.25rem;
-  }
-}/*# sourceMappingURL=Contact.css.map */
+    .contact div {
+        font-size: 1.25rem;
+    }
+}
