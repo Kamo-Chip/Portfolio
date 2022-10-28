@@ -141,6 +141,7 @@
 @media screen and (max-width: 500px) {
   .hero-text {
     padding-left: 2em;
+    padding-top: 12em;
   }
 
   .text2 {
