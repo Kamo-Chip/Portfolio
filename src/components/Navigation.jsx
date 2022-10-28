@@ -20,11 +20,19 @@ const Navigation = () => {
       nav.classList.add("nav-on");
       document.querySelector(".nav-socials").classList.remove("disappear");
       document.querySelector(".nav-socials").style.display = "flex";
-      document.querySelector(".nav-icon-container").style.position = "fixed";
+      document.querySelector(".nav-icon-container").style.position = "absolute";
       setShowNavItems(true);
     }
   };
 
+  const closeNav = () => {
+    console.log("hey");
+    const nav = document.querySelector(".nav-list");
+    nav.classList.remove("nav-on");
+    nav.classList.add("nav-off");
+    document.querySelector(".nav-socials").classList.add("disappear");
+    setShowNavItems(false);
+  };
   useEffect(() => {}, [showNavItems]);
 
   return (
@@ -36,7 +44,14 @@ const Navigation = () => {
         </div>
         <ul className="nav-list">
           <li>
-            <Link to="about" spy={true} smooth={true} offset={0} duration={500}>
+            <Link
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+              onClick={closeNav}
+            >
               About
             </Link>
           </li>
@@ -45,6 +60,7 @@ const Navigation = () => {
               href="https://resume.io/r/2wnrTk7E6"
               target="_blank"
               rel="noreferrer"
+              onClick={closeNav}
             >
               Resume
             </a>
@@ -56,6 +72,7 @@ const Navigation = () => {
               smooth={true}
               offset={0}
               duration={500}
+              onClick={closeNav}
             >
               Contact
             </Link>
