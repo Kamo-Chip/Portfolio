@@ -19,6 +19,8 @@
   animation-fill-mode: forwards;
   font-family: mabry;
   padding-bottom: 0.5rem;
+  will-change: transform;
+  will-change: opacity;
 }
 
 .text1 {
@@ -111,7 +113,6 @@
     font-size: 3.5rem;
   }
 }
-
 
 @media screen and (max-width: 700px) {
   .hero-section {
