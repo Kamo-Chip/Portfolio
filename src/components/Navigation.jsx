@@ -63,13 +63,13 @@ const Navigation = () => {
         </ul>
         <div className="nav-socials">
           <a href="https://github.com/Kamo-Chip" target="_blank" rel="noreferrer">
-            <BsGithub size="1.7rem"/>
+            <BsGithub size="1.7rem" color="#fff"/>
           </a>
           <a
             href="https://www.linkedin.com/in/kamogelokhumalo/"
             target="_blank" rel="noreferrer"
           >
-            <BsLinkedin size="1.7rem"/>
+            <BsLinkedin size="1.7rem" color="#fff"/>
           </a>
         </div>
       </div>
