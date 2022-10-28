@@ -62,14 +62,21 @@ const Navigation = () => {
           </li>
         </ul>
         <div className="nav-socials">
-          <a href="https://github.com/Kamo-Chip" target="_blank" rel="noreferrer">
-            <BsGithub size="1.7rem" color="#fff"/>
+          <a
+            href="https://github.com/Kamo-Chip"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#fff" }}
+          >
+            <BsGithub size="1.7rem" color="#fff" />
           </a>
           <a
             href="https://www.linkedin.com/in/kamogelokhumalo/"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
+            style={{ color: "#fff" }}
           >
-            <BsLinkedin size="1.7rem" color="#fff"/>
+            <BsLinkedin size="1.7rem" color="#fff" />
           </a>
         </div>
       </div>
