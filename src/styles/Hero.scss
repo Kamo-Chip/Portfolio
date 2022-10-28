@@ -25,17 +25,14 @@
 .text1 {
   font-size: 2rem;
   animation: moveUp 1000ms ease-in 1 forwards;
-  will-change: transform, opacity;
 }
 
 .text2 {
-  will-change: transform, opacity;
   animation: moveUp 1000ms ease-in 500ms 1 forwards;
   font-size: 8rem;
 }
 
 .text3 {
-  will-change: transform, opacity;
   animation: moveUp 1000ms ease-in 1000ms 1 forwards;
   font-family: "Inter";
   font-size: 2rem;
@@ -70,7 +67,7 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
+} 
 
 @media screen and (min-width: 1440px) {
   .hero-section {
