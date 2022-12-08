@@ -3,6 +3,7 @@ import { Link } from "react-scroll";
 import { HiX, HiMenuAlt4 } from "react-icons/hi";
 import { useState, useEffect } from "react";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
+import resume from "../documents/resume.pdf";
 
 const Navigation = () => {
   const [showNavItems, setShowNavItems] = useState(false);
@@ -26,12 +27,10 @@ const Navigation = () => {
   };
 
   const closeNav = () => {
-    console.log("hey");
-    const nav = document.querySelector(".nav-list");
-    nav.classList.remove("nav-on");
-    nav.classList.add("nav-off");
-    document.querySelector(".nav-socials").classList.add("disappear");
-    setShowNavItems(false);
+    if (showNavItems) {
+      setShowNavItems(false);
+      toggleNav();
+    }
   };
   useEffect(() => {}, [showNavItems]);
 
@@ -57,7 +56,7 @@ const Navigation = () => {
           </li>
           <li>
             <a
-              href="https://resume.io/r/2wnrTk7E6"
+              href={resume}
               target="_blank"
               rel="noreferrer"
               onClick={closeNav}
