@@ -7,6 +7,7 @@ const About = () => {
   const skills = [
     "JavaScript",
     "React",
+    "NextJS",
     "HTML",
     "CSS",
     "Java",
@@ -16,7 +17,7 @@ const About = () => {
     "Firebase",
     "MongoDB",
     "SQL",
-    "Node",
+    "NodeJS",
     "Express",
     "EJS",
   ];
